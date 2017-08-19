@@ -1,0 +1,1 @@
+# play-scalajs-typescript-react-example
