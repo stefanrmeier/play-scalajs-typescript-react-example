@@ -1,0 +1,3 @@
+@(user: User, url: String)(implicit messages: Messages)
+
+@messages("email.already.signed.up.txt.text", url)

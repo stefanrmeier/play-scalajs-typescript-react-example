@@ -1,0 +1,41 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+GET         /                                       controllers.ApplicationController.index
+POST        /                                       controllers.ApplicationController.index
+GET         /app.js                                 controllers.ApplicationController.appjs
+
+# API routes for backend
+GET         /javascriptRoutes                       controllers.ApplicationController.javascriptRoutes
+
+
+POST        /api/tracking/track                     controllers.TrackingController.track
+
+GET         /signOut                                controllers.ApplicationController.signOut
+GET         /authenticate/:provider                 controllers.security.SocialAuthController.authenticate(provider)
+
+GET         /signUp                                 controllers.security.SignUpController.view
+POST        /signUp                                 controllers.security.SignUpController.submit
+
+GET         /signIn                                 controllers.security.SignInController.view
+POST        /signIn                                 controllers.security.SignInController.submit
+
+GET         /reset/done                             controllers.ApplicationController.index
+
+GET         /password/forgot                        controllers.security.ForgotPasswordController.view
+POST        /password/forgot                        controllers.security.ForgotPasswordController.submit
+GET         /password/reset/:token                  controllers.security.ResetPasswordController.view(token: java.util.UUID)
+POST        /password/reset/:token                  controllers.security.ResetPasswordController.submit(token: java.util.UUID)
+GET         /password/change                        controllers.security.ChangePasswordController.view
+POST        /password/change                        controllers.security.ChangePasswordController.submit
+
+GET         /account/email/:email                   controllers.security.ActivateAccountController.send(email: String)
+GET         /account/activate/:token                controllers.security.ActivateAccountController.activate(token: java.util.UUID)
+
+
+# Map static resources from the /public folder to th /assets URL path
+GET         /assets/*file                           controllers.Assets.at(path="/public", file)
+GET         /assets/*file                           controllers.Assets.versioned(path="/public", file: Asset)
+GET         /webjars/*file                          controllers.WebJarAssets.at(file)

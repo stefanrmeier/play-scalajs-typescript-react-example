@@ -1,0 +1,32 @@
+logs
+target
+/.idea
+/.idea_modules
+/*.ipr
+/*.iws
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+
+# softlinks to make shared appear under sharing projects
+/jvm/shared-main
+/jvm/shared-test
+/js/shared-main
+/js/shared-test
+
+# eclipse related
+\.cache*
+\.classpath
+\.project
+org.eclipse.core.resources.prefs
+org.scala-ide.sdt.core.prefs
+
+
+js/.settings/
+js/main/
+js/src/test/
+jvm/.settings/
+project/project/
+shared/.js/
+shared/.jvm/

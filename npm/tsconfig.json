@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve" ,
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "baseUrl": "./ts",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "cacheDirectory": "./.awcache"
+  }
+}

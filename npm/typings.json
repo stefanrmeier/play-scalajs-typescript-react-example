@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "redux-actions": "registry:dt/redux-actions#1.2.0+20170223151516",
+    "redux-form": "registry:dt/redux-form#6.3.3+20170215010801"
+  }
+}

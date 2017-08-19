@@ -1,0 +1,25 @@
+@()(implicit req: play.api.mvc.RequestHeader, flash: Flash)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Example</title>
+    <link rel="shortcut icon" href='@routes.Assets.versioned("images/favicon.png")'>
+    <link rel="stylesheet" href='@routes.Assets.versioned("lib/bootstrap/css/bootstrap.min.css")'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/main.css")'>
+</head>
+<body>
+
+<div id="app" data-fragment='@(flash.get("fragment").getOrElse("/"))'></div>
+<script type="text/javascript" src="@routes.ApplicationController.javascriptRoutes"></script>
+<script src='@routes.Assets.versioned("js-fastopt.js")'></script>
+<script src='@routes.Assets.versioned("js-launcher.js")'></script>
+<script src='@routes.Assets.versioned("javascripts/dist/vendor.js")'></script>
+<script src='@routes.Assets.versioned("javascripts/dist/examples.js")'></script>
+</body>
+</html>

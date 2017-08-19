@@ -1,0 +1,56 @@
+{
+  "extends": [
+    "./node_modules/tslint-microsoft-contrib/recommended_ruleset.js"
+  ],
+  "rulesDirectory": [
+    "./node_modules/tslint-microsoft-contrib",
+    "./node_modules/tslint-react/rules"
+  ],
+
+  "rules": {
+    "quotemark": [true, "single", "jsx-double", "avoid-escape"],
+    "no-unused-variable": [true, "react", {"ignore-pattern": "^React$"}],
+    "no-internal-module": true,
+    "no-backbone-get-set-outside-model": false,
+
+    "jsx-no-lambda": true,
+    "jsx-alignment": true,
+    "jsx-no-string-ref": true,
+    "jsx-self-close": true,
+
+    "no-any": false,
+    "no-stateless-class": false,
+    "export-name": false,
+    "function-name": false,
+    "import-name": false,
+    "interface-name": false,
+    "max-line-length": false,
+    "member-access": false,
+    "missing-jsdoc": false,
+    "no-require-imports": false,
+    "no-multiline-string": false, // multiline-strings often introduce unnecessary whitespace into the string literals
+    "no-relative-imports": false,
+    "no-default-export": false, 
+    "no-var-requires": false,
+    "no-shadowed-variable": false,
+    "prefer-array-literal": false,
+    "variable-name": false,
+    "no-trailing-whitespace": false,
+    "no-consecutive-blank-lines": false,
+    "no-constructor-vars": false,
+    "typedef-whitespace": false,
+    "semicolon": false,
+    "whitespace": false,
+    "one-line": false,
+    "no-missing-visibility-modifiers": false, // use tslint member-access rule instead
+    "align": false,
+    "curly": false,
+    "no-string-literal": false,
+    "radix": false,
+    // pick one of the two following type-cast formats and use it consistently
+    "prefer-type-cast": false,
+    "no-angle-bracket-type-assertion": false,
+
+    "no-unreachable": true
+  }
+}

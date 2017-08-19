@@ -1,0 +1,13 @@
+{
+  "outputDir": "jvm/app/models/es/",
+  "mappings": [
+    {
+      "path": "jvm/json/import/example.json",
+      "packageName": "types",
+      "className": "EsExample"
+    }
+  ],
+  "typeMappings": {
+    "minhash": "String"
+  }
+}
